@@ -1,0 +1,43 @@
+<!-- Used chatgpt to help with some of the syntax code since I'm still getting the hang of using ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= user.local.email %>'s Dog Adoption Tracker</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1><%= user.local.email %>'s Dog Adoption Tracker</h1>
+  </header>
+
+  <div class="container">
+    <form class="add-pet-form" action="/pets" method="POST">
+      <input type="text" name="breed" placeholder="Breed" required>
+      <input type="text" name="age" placeholder="Age" required>
+      <button type="submit">Add Pet</button>
+    </form>
+
+    <% if (pets.length === 0) { %>
+      <p style="text-align:center;">No pets yet! Add some to get started.</p>
+    <% } else { %>
+      <div class="pets-container">
+        <% pets.forEach(function(pet) { %>
+          <div class="pet-card">
+            <img src="<%= pet.photo %>" alt="<%= pet.type %> Photo">
+            <div class="info">
+              <h3><%= pet.type %> | <%= pet.breed %></h3>
+              <p>Age: <%= pet.age %></p>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% } %>
+
+    <div class="logout">
+      <a href="/logout">Logout</a>
+    </div>
+  </div>
+</body>
+</html>
