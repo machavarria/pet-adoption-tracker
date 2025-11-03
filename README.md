@@ -1,4 +1,4 @@
-# Movie Watchlist App 🍿
+# Dog Adoption Tracker 🐾
 
 ### Description
 User can Login/Sign up to make an account for the Dog Adoption Tracker and from there can add the breed, age, and picture for the dog you are looking to adopt. The user will manually add the title, year, genre, and can add a movie poster picture.
