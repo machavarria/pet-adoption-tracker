@@ -14,15 +14,9 @@ User can Login/Sign up to make an account for the Dog Adoption Tracker and from 
 - Node.js
 
 ### Lessons Learned:
-- How to manage a database using MongoDB
+- How to create and manage a database collection with MongoDB
 - Applying different parameters for the api
-- How to store data
-
-```
-I completed the challenge: 5
-I feel good about my code: 4
-Open for any feedback.
-```
+- How to handle form inputs and pass data from the frontend to the backend
 
 ## Installation
 
