@@ -16,7 +16,7 @@ User can Login/Sign up to make an account for the Dog Adoption Tracker and from 
 ### Lessons Learned:
 - How to manage a database using MongoDB
 - Applying different parameters for the api
-- The use of fetch and catch
+- How to store data
 
 ```
 I completed the challenge: 5
